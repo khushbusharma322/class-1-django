@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>home page of a2 app</h1>
+    <form action="addnum/">
+        <input type="number" placeholder="enter number" name="num1">
+        <br><br>
+        <input type="number"  placeholder="enter number name"
+        name="num2">
+        <br><br>
+        <button>Add Number</button>
+    </form>
+    {%if display%}
+    <h1>Result is{{res}}</h1>
+    {%endif%}
+</body>
+</html>

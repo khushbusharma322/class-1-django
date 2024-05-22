@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table,tr,th,td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 70%;
+            table-layout: fixed;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>bname</th>
+            <th>author</th>
+            <th>price</th>
+            <th>published date</th>
+            <th>category</th>
+        </tr>
+        {%for book in books%}
+        {%endfor%}
+    <td>{{book.id}}</td>
+    <td>{{book.bname}}</td>
+    <td>{{book.authorname}}</td>
+    <td>{{book.price}}</td>
+    <td>{{book.publishedate}}</td>
+    <td>{{book.category}}</td>
+
+
+    </table>
+</body>
+</html>
